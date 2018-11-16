@@ -34,9 +34,9 @@ class ApplicationTest extends TestCase
         $app->addSubscriber($subscriberMock);
 
         $subscribers = $app->getSubscribers();
-        $curSubscribersCount = $this->count($subscribers);
+        $curSubscribersCount = count($subscribers);
 
-        $this->assertSame($subscriberMock, $subscribers[count($subscribers) - 1]);
+        $this->assertSame($subscriberMock, $subscribers[$curSubscribersCount - 1]);
         $this->assertSame($prevSubscribersCount + 1, $curSubscribersCount);
     }
 

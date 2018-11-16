@@ -70,7 +70,7 @@ class Application
      *
      * @return SubscriberInterface[]
      */
-    public function getSubscribers()
+    public function getSubscribers(): array
     {
         return $this->subscribers;
     }

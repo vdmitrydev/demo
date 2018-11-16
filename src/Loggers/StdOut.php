@@ -45,7 +45,7 @@ class StdOut implements LoggerInterface
      */
     private function log(string $message, string $color = '')
     {
-        $string = $color === '' ? $message : "\033[" . $color . 'm' . $message . "\033[0m";
+        $string = '' === $color ? $message : "\033[" . $color . 'm' . $message . "\033[0m";
 
         echo $string . "\n";
     }

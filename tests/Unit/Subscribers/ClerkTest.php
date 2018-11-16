@@ -6,9 +6,6 @@ use PHPUnit\Framework\TestCase;
 
 class ClerkTest extends TestCase
 {
-    /** @var Clerk */
-    private $clerk;
-
     /** @var \PHPUnit\Framework\MockObject\MockObject */
     private $loggerMock;
 
